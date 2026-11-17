@@ -1,0 +1,13 @@
+# Sobe o servidor do jogo com um comando, em qualquer sistema com Docker:
+#   1) copie .env.example para .env e ponha a sua string do MongoDB Atlas
+#   2) docker compose up --build -d
+services:
+  servidor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    ports:
+      - "3000:3000/tcp"     # HTTP (Express): login, mundos, saves
+      - "7777:7777/udp"     # ENet: tempo real
+    restart: unless-stopped

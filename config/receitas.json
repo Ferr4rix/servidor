@@ -1,0 +1,256 @@
+{
+  "_comentario": "Receitas da pedra de transmutação: item -> materiais (id do item: quantidade), almas, quantidade feita e desgaste (quanto a pedra gasta da durabilidade dela, 300; a 0 ela quebra).",
+  "bau de madeira": {
+    "materiais": {
+      "wood": 4
+    },
+    "almas": 20,
+    "quantidade": 1,
+    "desgaste": 4
+  },
+  "pedra solar": {
+    "almas": 40,
+    "quantidade": 1,
+    "desgaste": 4
+  },
+  "fragmento solar": {
+    "materiais": {
+      "pedra": 1
+    },
+    "almas": 10,
+    "quantidade": 1,
+    "desgaste": 2
+  },
+  "pedra": {
+    "almas": 2,
+    "quantidade": 4,
+    "desgaste": 1
+  },
+  "elmo 1": {
+    "almas": 150,
+    "desgaste": 15
+  },
+  "peitoral 1": {
+    "almas": 300,
+    "desgaste": 30
+  },
+  "calça 1": {
+    "almas": 200,
+    "desgaste": 20
+  },
+  "bota 1": {
+    "almas": 120,
+    "desgaste": 12
+  },
+  "elmo 2": {
+    "almas": 400,
+    "desgaste": 40
+  },
+  "peitoral 2": {
+    "almas": 800,
+    "desgaste": 80
+  },
+  "calça 2": {
+    "almas": 550,
+    "desgaste": 55
+  },
+  "bota 2": {
+    "almas": 320,
+    "desgaste": 32
+  },
+  "espada do heroi": {
+    "almas": 1000,
+    "desgaste": 100
+  },
+  "adaga_viajante": {
+    "almas": 400,
+    "desgaste": 40
+  },
+  "espada_aco": {
+    "almas": 700,
+    "desgaste": 70
+  },
+  "machadinha_grimhew": {
+    "almas": 800,
+    "desgaste": 80
+  },
+  "montante_lua_negra": {
+    "almas": 1500,
+    "desgaste": 150
+  },
+  "ceifador_cinzento": {
+    "almas": 2000,
+    "desgaste": 200
+  },
+  "lanca_ferro": {
+    "almas": 700,
+    "desgaste": 70
+  },
+  "tridente": {
+    "almas": 1000,
+    "desgaste": 100
+  },
+  "escudo_ferro": {
+    "almas": 600,
+    "desgaste": 60
+  },
+  "parafuso de arquimedes": {
+    "materiais": {
+      "wood": 3,
+      "pedra": 1
+    },
+    "almas": 15,
+    "quantidade": 2,
+    "desgaste": 3
+  },
+  "manivela": {
+    "materiais": {
+      "wood": 2,
+      "pedra": 1
+    },
+    "almas": 10,
+    "quantidade": 1,
+    "desgaste": 2
+  },
+  "eixo": {
+    "materiais": {
+      "wood": 1
+    },
+    "almas": 4,
+    "quantidade": 4,
+    "desgaste": 1
+  },
+  "encaixe do parafuso": {
+    "materiais": {
+      "wood": 4,
+      "pedra": 2
+    },
+    "almas": 25,
+    "quantidade": 1,
+    "desgaste": 3
+  },
+  "wood": {
+    "almas": 4,
+    "quantidade": 1,
+    "desgaste": 1
+  },
+  "terra": {
+    "almas": 1,
+    "quantidade": 4,
+    "desgaste": 1
+  },
+  "leaves": {
+    "almas": 1,
+    "quantidade": 4,
+    "desgaste": 1
+  },
+  "pedra dura": {
+    "materiais": {
+      "pedra": 4
+    },
+    "almas": 20,
+    "quantidade": 1,
+    "desgaste": 3
+  },
+  "maca": {
+    "materiais": {
+      "leaves": 2
+    },
+    "almas": 3,
+    "quantidade": 1,
+    "desgaste": 1
+  },
+  "balde": {
+    "materiais": {
+      "pedra": 2
+    },
+    "almas": 10,
+    "quantidade": 1,
+    "desgaste": 2
+  },
+  "cola": {
+    "materiais": {
+      "leaves": 2,
+      "maca": 1
+    },
+    "almas": 8,
+    "quantidade": 4,
+    "desgaste": 1
+  },
+  "banco de madeira": {
+    "materiais": {
+      "wood": 3
+    },
+    "almas": 15,
+    "quantidade": 1,
+    "desgaste": 2
+  },
+  "bau grande": {
+    "materiais": {
+      "wood": 8
+    },
+    "almas": 60,
+    "quantidade": 1,
+    "desgaste": 6
+  },
+  "stand": {
+    "materiais": {
+      "wood": 4
+    },
+    "almas": 30,
+    "quantidade": 1,
+    "desgaste": 3
+  },
+  "minoculus-grump": {
+    "materiais": {
+      "pedra": 4
+    },
+    "almas": 500,
+    "quantidade": 1,
+    "desgaste": 50
+  },
+  "pedra_transmutacao": {
+    "materiais": {
+      "pedra": 2,
+      "pedra solar": 1
+    },
+    "almas": 300,
+    "quantidade": 1,
+    "desgaste": 30
+  },
+  "espada_esqueleto": {
+    "almas": 350,
+    "desgaste": 35
+  },
+  "escudo_esqueleto": {
+    "almas": 300,
+    "desgaste": 30
+  },
+  "isqueiro": {
+    "materiais": {
+      "pedra": 1,
+      "fragmento solar": 1
+    },
+    "almas": 25,
+    "quantidade": 1,
+    "desgaste": 3
+  },
+  "_todos": "Todos os itens e blocos podem ser feitos aqui (o balde de água é um balde + 2 almas). Não têm receita só as variantes que outro item já põe: 'eixo deitado' / 'manivela de lado' (o eixo e a manivela postos de lado) e 'maca_pendurada' (a maçã a crescer na árvore). A pedra de transmutação também se compra no minoculus.",
+  "grama": {
+    "materiais": {
+      "terra": 1,
+      "leaves": 1
+    },
+    "almas": 2,
+    "quantidade": 1,
+    "desgaste": 1
+  },
+  "balde_agua": {
+    "materiais": {
+      "balde": 1
+    },
+    "almas": 2,
+    "quantidade": 1,
+    "desgaste": 1
+  }
+}

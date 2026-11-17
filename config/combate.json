@@ -1,0 +1,105 @@
+{
+  "_leia": "Combate do jogador (player_advanced/combat.py). Tempos em segundos do clipe (velocidade normal). Guardar o ficheiro com o jogo aberto recarrega na hora.",
+
+  "estilo_corpo": "m",
+  "_estilo_corpo": "m = clipes normais; f = clipes com sufixo _f (postura feminina, mesmos golpes). Não se misturam.",
+
+  "transicoes": {
+    "entrar_guarda": 0.15,
+    "sair_guarda": 0.3,
+    "combo": 0.08,
+    "golpe": 0.1,
+    "fim_golpe": 0.12,
+    "entrar_bloqueio": 0.05,
+    "sair_bloqueio": 0.12,
+    "reacao": 0.06,
+    "morte": 0.08,
+    "movimento": 0.1
+  },
+
+  "guarda_segundos": 4.0,
+  "_guarda_segundos": "Sem atacar, bloquear, levar dano nem inimigo perto durante isto: volta ao relaxado.",
+  "inimigo_perto_blocos": 5,
+
+  "janela_impacto": 0.12,
+  "_janela_impacto": "A arma só acerta nesta janela à volta do impacto (tempo do clipe).",
+
+  "reacao": {"clipe": "combat_damage", "trava": 0.4, "dano_minimo": 0.5},
+  "_reacao": "Levar dano toca combat_damage; durante 'trava' segundos não se ataca/bloqueia/rola. Abaixo de dano_minimo não há reação.",
+
+  "morte": {"clipe": "death", "segundos": 1.6},
+
+  "bloqueio": {"lentidao": 0.5, "estamina_por_dano": 4.0, "angulo": 75, "trava_reacao": 0.15,
+               "desgaste_arma": 6.0, "estamina_por_dano_arma": 2.0},
+  "_bloqueio": "lentidao: velocidade a bloquear (x). Cada ponto de dano bloqueado gasta estamina_por_dano. Só bloqueia o que vem da frente (ângulo). A defesa tem prioridade: corta golpes (menos o instante do impacto) e, passados trava_reacao s, a reação ao dano. Com arma (sem escudo) a arma aguenta o golpe todo e gasta desgaste_arma x o dano de durabilidade (e estamina_por_dano_arma de estamina); de mãos vazias só tira reducao_bloqueio do estilo.",
+
+  "correndo": {"clipe": "attack_running", "dano": 1.25, "estamina": 6.0},
+  "contra_ataque": {"dano": 1.5},
+
+  "golpes": {
+    "punch_right":          {"impacto": 0.25, "combo": 0.45},
+    "punch_left":           {"impacto": 0.25, "combo": 0.45, "mao": "esquerda"},
+    "attack_1h_right":      {"impacto": 0.28, "combo": 0.55},
+    "attack_1h_left":       {"impacto": 0.28, "combo": 0.55, "mao": "esquerda"},
+    "attack_1h_backhand":   {"impacto": 0.32, "combo": 0.55},
+    "attack_2h":            {"impacto": 0.57, "combo": 0.95},
+    "attack_2h_horizontal": {"impacto": 0.58, "combo": 0.95},
+    "attack_polearm":       {"impacto": 0.38, "combo": 0.75},
+    "attack_shield":        {"impacto": 0.25, "combo": 0.45, "mao": "escudo"},
+    "attack_running":       {"impacto": 0.26, "combo": 0.45, "so_tronco": true}
+  },
+
+  "estilos": {
+    "desarmado": {
+      "guarda": "combat_idle_unarmed", "bloqueio": "block_unarmed",
+      "combo": ["punch_right", "punch_left", "punch_right"],
+      "finalizador": 1.5, "reducao_bloqueio": 0.3, "estamina": 3.0
+    },
+    "1h": {
+      "guarda": "combat_idle_1h", "bloqueio": "block_1h",
+      "combo": ["attack_1h_right", "attack_1h_backhand", "attack_1h_right"],
+      "finalizador": 1.5, "reducao_bloqueio": 0.5, "estamina": 7.0
+    },
+    "dual": {
+      "guarda": "combat_idle_1h", "bloqueio": "block_1h",
+      "combo": ["attack_1h_right", "attack_1h_left", "attack_1h_backhand", "attack_1h_left"],
+      "combo_cedo": 0.5,
+      "finalizador": 1.5, "reducao_bloqueio": 0.5, "estamina": 6.0
+    },
+    "1h_esquerda": {
+      "_leia": "Arma de uma mão (adaga...) SÓ na 2ª mão, mão direita vazia: ataca com a esquerda, como o 1h mas com a outra mão. Sem golpe a correr (o clipe é da mão direita).",
+      "guarda": "combat_idle_1h",
+      "bloqueio": "block_1h",
+      "combo": ["attack_1h_left", "attack_1h_left", "attack_1h_left"],
+      "combo_cedo": 0.5,
+      "finalizador": 1.5,
+      "reducao_bloqueio": 0.5,
+      "estamina": 6.0,
+      "sem_corrida": true
+    },
+    "espada_escudo": {
+      "guarda": "combat_idle_1h", "bloqueio": "block_shield",
+      "combo": ["attack_1h_right", "attack_1h_backhand", "attack_shield"],
+      "contra_ataque": ["attack_shield", "attack_1h_right"],
+      "finalizador": 1.0, "reducao_bloqueio": 0.5, "estamina": 7.0
+    },
+    "escudo": {
+      "guarda": "combat_idle_unarmed", "bloqueio": "block_shield",
+      "combo": ["punch_right", "attack_shield"],
+      "contra_ataque": ["attack_shield", "punch_right"],
+      "finalizador": 1.0, "reducao_bloqueio": 0.3, "estamina": 4.0
+    },
+    "2h": {
+      "guarda": "combat_idle_2h", "bloqueio": "block_2h",
+      "combo": ["attack_2h_horizontal", "attack_2h"],
+      "carregado": {"clipe": "attack_2h", "segurar": 0.45, "dano": 1.6},
+      "finalizador": 1.3, "reducao_bloqueio": 0.6, "estamina": 12.0
+    },
+    "polearm": {
+      "guarda": "combat_idle_polearm", "bloqueio": "block_2h",
+      "combo": ["attack_polearm", "attack_polearm", "attack_2h_horizontal"],
+      "velocidades": [1.0, 1.1, 1.0],
+      "finalizador": 1.0, "reducao_bloqueio": 0.5, "estamina": 9.0
+    }
+  }
+}

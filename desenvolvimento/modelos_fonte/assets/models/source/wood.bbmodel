@@ -1,0 +1,1378 @@
+{
+ "meta": {
+  "format_version": "5.0",
+  "model_format": "free",
+  "box_uv": false
+ },
+ "name": "wood",
+ "model_identifier": "",
+ "visible_box": [
+  1,
+  1,
+  0
+ ],
+ "resolution": {
+  "width": 32,
+  "height": 16
+ },
+ "elements": [
+  {
+   "name": "tronco",
+   "color": 1,
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "shading": "flat",
+   "export": true,
+   "visibility": true,
+   "locked": false,
+   "render_order": "default",
+   "allow_mirror_modeling": true,
+   "vertices": {
+    "b0": [
+     8.0,
+     0.0,
+     0.0
+    ],
+    "t0": [
+     8.0,
+     16.0,
+     0.0
+    ],
+    "b1": [
+     7.39104,
+     0.0,
+     3.06147
+    ],
+    "t1": [
+     7.39104,
+     16.0,
+     3.06147
+    ],
+    "b2": [
+     5.65685,
+     0.0,
+     5.65685
+    ],
+    "t2": [
+     5.65685,
+     16.0,
+     5.65685
+    ],
+    "b3": [
+     3.06147,
+     0.0,
+     7.39104
+    ],
+    "t3": [
+     3.06147,
+     16.0,
+     7.39104
+    ],
+    "b4": [
+     0.0,
+     0.0,
+     8.0
+    ],
+    "t4": [
+     0.0,
+     16.0,
+     8.0
+    ],
+    "b5": [
+     -3.06147,
+     0.0,
+     7.39104
+    ],
+    "t5": [
+     -3.06147,
+     16.0,
+     7.39104
+    ],
+    "b6": [
+     -5.65685,
+     0.0,
+     5.65685
+    ],
+    "t6": [
+     -5.65685,
+     16.0,
+     5.65685
+    ],
+    "b7": [
+     -7.39104,
+     0.0,
+     3.06147
+    ],
+    "t7": [
+     -7.39104,
+     16.0,
+     3.06147
+    ],
+    "b8": [
+     -8.0,
+     0.0,
+     0.0
+    ],
+    "t8": [
+     -8.0,
+     16.0,
+     0.0
+    ],
+    "b9": [
+     -7.39104,
+     0.0,
+     -3.06147
+    ],
+    "t9": [
+     -7.39104,
+     16.0,
+     -3.06147
+    ],
+    "b10": [
+     -5.65685,
+     0.0,
+     -5.65685
+    ],
+    "t10": [
+     -5.65685,
+     16.0,
+     -5.65685
+    ],
+    "b11": [
+     -3.06147,
+     0.0,
+     -7.39104
+    ],
+    "t11": [
+     -3.06147,
+     16.0,
+     -7.39104
+    ],
+    "b12": [
+     -0.0,
+     0.0,
+     -8.0
+    ],
+    "t12": [
+     -0.0,
+     16.0,
+     -8.0
+    ],
+    "b13": [
+     3.06147,
+     0.0,
+     -7.39104
+    ],
+    "t13": [
+     3.06147,
+     16.0,
+     -7.39104
+    ],
+    "b14": [
+     5.65685,
+     0.0,
+     -5.65685
+    ],
+    "t14": [
+     5.65685,
+     16.0,
+     -5.65685
+    ],
+    "b15": [
+     7.39104,
+     0.0,
+     -3.06147
+    ],
+    "t15": [
+     7.39104,
+     16.0,
+     -3.06147
+    ],
+    "cb": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ct": [
+     0.0,
+     16.0,
+     0.0
+    ]
+   },
+   "faces": {
+    "lado0": {
+     "uv": {
+      "b0": [
+       0,
+       16
+      ],
+      "b1": [
+       1,
+       16
+      ],
+      "t1": [
+       1,
+       0
+      ],
+      "t0": [
+       0,
+       0
+      ]
+     },
+     "vertices": [
+      "t0",
+      "t1",
+      "b1",
+      "b0"
+     ],
+     "texture": 0
+    },
+    "topo0": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t0": [
+       32.0,
+       8.0
+      ],
+      "t1": [
+       31.39104,
+       11.06147
+      ]
+     },
+     "vertices": [
+      "t1",
+      "t0",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base0": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b0": [
+       32.0,
+       8.0
+      ],
+      "b1": [
+       31.39104,
+       11.06147
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b0",
+      "b1"
+     ],
+     "texture": 0
+    },
+    "lado1": {
+     "uv": {
+      "b1": [
+       1,
+       16
+      ],
+      "b2": [
+       2,
+       16
+      ],
+      "t2": [
+       2,
+       0
+      ],
+      "t1": [
+       1,
+       0
+      ]
+     },
+     "vertices": [
+      "t1",
+      "t2",
+      "b2",
+      "b1"
+     ],
+     "texture": 0
+    },
+    "topo1": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t1": [
+       31.39104,
+       11.06147
+      ],
+      "t2": [
+       29.65685,
+       13.65685
+      ]
+     },
+     "vertices": [
+      "t2",
+      "t1",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base1": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b1": [
+       31.39104,
+       11.06147
+      ],
+      "b2": [
+       29.65685,
+       13.65685
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b1",
+      "b2"
+     ],
+     "texture": 0
+    },
+    "lado2": {
+     "uv": {
+      "b2": [
+       2,
+       16
+      ],
+      "b3": [
+       3,
+       16
+      ],
+      "t3": [
+       3,
+       0
+      ],
+      "t2": [
+       2,
+       0
+      ]
+     },
+     "vertices": [
+      "t2",
+      "t3",
+      "b3",
+      "b2"
+     ],
+     "texture": 0
+    },
+    "topo2": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t2": [
+       29.65685,
+       13.65685
+      ],
+      "t3": [
+       27.06147,
+       15.39104
+      ]
+     },
+     "vertices": [
+      "t3",
+      "t2",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base2": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b2": [
+       29.65685,
+       13.65685
+      ],
+      "b3": [
+       27.06147,
+       15.39104
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b2",
+      "b3"
+     ],
+     "texture": 0
+    },
+    "lado3": {
+     "uv": {
+      "b3": [
+       3,
+       16
+      ],
+      "b4": [
+       4,
+       16
+      ],
+      "t4": [
+       4,
+       0
+      ],
+      "t3": [
+       3,
+       0
+      ]
+     },
+     "vertices": [
+      "t3",
+      "t4",
+      "b4",
+      "b3"
+     ],
+     "texture": 0
+    },
+    "topo3": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t3": [
+       27.06147,
+       15.39104
+      ],
+      "t4": [
+       24.0,
+       16.0
+      ]
+     },
+     "vertices": [
+      "t4",
+      "t3",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base3": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b3": [
+       27.06147,
+       15.39104
+      ],
+      "b4": [
+       24.0,
+       16.0
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b3",
+      "b4"
+     ],
+     "texture": 0
+    },
+    "lado4": {
+     "uv": {
+      "b4": [
+       4,
+       16
+      ],
+      "b5": [
+       5,
+       16
+      ],
+      "t5": [
+       5,
+       0
+      ],
+      "t4": [
+       4,
+       0
+      ]
+     },
+     "vertices": [
+      "t4",
+      "t5",
+      "b5",
+      "b4"
+     ],
+     "texture": 0
+    },
+    "topo4": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t4": [
+       24.0,
+       16.0
+      ],
+      "t5": [
+       20.93853,
+       15.39104
+      ]
+     },
+     "vertices": [
+      "t5",
+      "t4",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base4": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b4": [
+       24.0,
+       16.0
+      ],
+      "b5": [
+       20.93853,
+       15.39104
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b4",
+      "b5"
+     ],
+     "texture": 0
+    },
+    "lado5": {
+     "uv": {
+      "b5": [
+       5,
+       16
+      ],
+      "b6": [
+       6,
+       16
+      ],
+      "t6": [
+       6,
+       0
+      ],
+      "t5": [
+       5,
+       0
+      ]
+     },
+     "vertices": [
+      "t5",
+      "t6",
+      "b6",
+      "b5"
+     ],
+     "texture": 0
+    },
+    "topo5": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t5": [
+       20.93853,
+       15.39104
+      ],
+      "t6": [
+       18.34315,
+       13.65685
+      ]
+     },
+     "vertices": [
+      "t6",
+      "t5",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base5": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b5": [
+       20.93853,
+       15.39104
+      ],
+      "b6": [
+       18.34315,
+       13.65685
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b5",
+      "b6"
+     ],
+     "texture": 0
+    },
+    "lado6": {
+     "uv": {
+      "b6": [
+       6,
+       16
+      ],
+      "b7": [
+       7,
+       16
+      ],
+      "t7": [
+       7,
+       0
+      ],
+      "t6": [
+       6,
+       0
+      ]
+     },
+     "vertices": [
+      "t6",
+      "t7",
+      "b7",
+      "b6"
+     ],
+     "texture": 0
+    },
+    "topo6": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t6": [
+       18.34315,
+       13.65685
+      ],
+      "t7": [
+       16.60896,
+       11.06147
+      ]
+     },
+     "vertices": [
+      "t7",
+      "t6",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base6": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b6": [
+       18.34315,
+       13.65685
+      ],
+      "b7": [
+       16.60896,
+       11.06147
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b6",
+      "b7"
+     ],
+     "texture": 0
+    },
+    "lado7": {
+     "uv": {
+      "b7": [
+       7,
+       16
+      ],
+      "b8": [
+       8,
+       16
+      ],
+      "t8": [
+       8,
+       0
+      ],
+      "t7": [
+       7,
+       0
+      ]
+     },
+     "vertices": [
+      "t7",
+      "t8",
+      "b8",
+      "b7"
+     ],
+     "texture": 0
+    },
+    "topo7": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t7": [
+       16.60896,
+       11.06147
+      ],
+      "t8": [
+       16.0,
+       8.0
+      ]
+     },
+     "vertices": [
+      "t8",
+      "t7",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base7": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b7": [
+       16.60896,
+       11.06147
+      ],
+      "b8": [
+       16.0,
+       8.0
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b7",
+      "b8"
+     ],
+     "texture": 0
+    },
+    "lado8": {
+     "uv": {
+      "b8": [
+       8,
+       16
+      ],
+      "b9": [
+       9,
+       16
+      ],
+      "t9": [
+       9,
+       0
+      ],
+      "t8": [
+       8,
+       0
+      ]
+     },
+     "vertices": [
+      "t8",
+      "t9",
+      "b9",
+      "b8"
+     ],
+     "texture": 0
+    },
+    "topo8": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t8": [
+       16.0,
+       8.0
+      ],
+      "t9": [
+       16.60896,
+       4.93853
+      ]
+     },
+     "vertices": [
+      "t9",
+      "t8",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base8": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b8": [
+       16.0,
+       8.0
+      ],
+      "b9": [
+       16.60896,
+       4.93853
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b8",
+      "b9"
+     ],
+     "texture": 0
+    },
+    "lado9": {
+     "uv": {
+      "b9": [
+       9,
+       16
+      ],
+      "b10": [
+       10,
+       16
+      ],
+      "t10": [
+       10,
+       0
+      ],
+      "t9": [
+       9,
+       0
+      ]
+     },
+     "vertices": [
+      "t9",
+      "t10",
+      "b10",
+      "b9"
+     ],
+     "texture": 0
+    },
+    "topo9": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t9": [
+       16.60896,
+       4.93853
+      ],
+      "t10": [
+       18.34315,
+       2.34315
+      ]
+     },
+     "vertices": [
+      "t10",
+      "t9",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base9": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b9": [
+       16.60896,
+       4.93853
+      ],
+      "b10": [
+       18.34315,
+       2.34315
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b9",
+      "b10"
+     ],
+     "texture": 0
+    },
+    "lado10": {
+     "uv": {
+      "b10": [
+       10,
+       16
+      ],
+      "b11": [
+       11,
+       16
+      ],
+      "t11": [
+       11,
+       0
+      ],
+      "t10": [
+       10,
+       0
+      ]
+     },
+     "vertices": [
+      "t10",
+      "t11",
+      "b11",
+      "b10"
+     ],
+     "texture": 0
+    },
+    "topo10": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t10": [
+       18.34315,
+       2.34315
+      ],
+      "t11": [
+       20.93853,
+       0.60896
+      ]
+     },
+     "vertices": [
+      "t11",
+      "t10",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base10": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b10": [
+       18.34315,
+       2.34315
+      ],
+      "b11": [
+       20.93853,
+       0.60896
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b10",
+      "b11"
+     ],
+     "texture": 0
+    },
+    "lado11": {
+     "uv": {
+      "b11": [
+       11,
+       16
+      ],
+      "b12": [
+       12,
+       16
+      ],
+      "t12": [
+       12,
+       0
+      ],
+      "t11": [
+       11,
+       0
+      ]
+     },
+     "vertices": [
+      "t11",
+      "t12",
+      "b12",
+      "b11"
+     ],
+     "texture": 0
+    },
+    "topo11": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t11": [
+       20.93853,
+       0.60896
+      ],
+      "t12": [
+       24.0,
+       0.0
+      ]
+     },
+     "vertices": [
+      "t12",
+      "t11",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base11": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b11": [
+       20.93853,
+       0.60896
+      ],
+      "b12": [
+       24.0,
+       0.0
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b11",
+      "b12"
+     ],
+     "texture": 0
+    },
+    "lado12": {
+     "uv": {
+      "b12": [
+       12,
+       16
+      ],
+      "b13": [
+       13,
+       16
+      ],
+      "t13": [
+       13,
+       0
+      ],
+      "t12": [
+       12,
+       0
+      ]
+     },
+     "vertices": [
+      "t12",
+      "t13",
+      "b13",
+      "b12"
+     ],
+     "texture": 0
+    },
+    "topo12": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t12": [
+       24.0,
+       0.0
+      ],
+      "t13": [
+       27.06147,
+       0.60896
+      ]
+     },
+     "vertices": [
+      "t13",
+      "t12",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base12": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b12": [
+       24.0,
+       0.0
+      ],
+      "b13": [
+       27.06147,
+       0.60896
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b12",
+      "b13"
+     ],
+     "texture": 0
+    },
+    "lado13": {
+     "uv": {
+      "b13": [
+       13,
+       16
+      ],
+      "b14": [
+       14,
+       16
+      ],
+      "t14": [
+       14,
+       0
+      ],
+      "t13": [
+       13,
+       0
+      ]
+     },
+     "vertices": [
+      "t13",
+      "t14",
+      "b14",
+      "b13"
+     ],
+     "texture": 0
+    },
+    "topo13": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t13": [
+       27.06147,
+       0.60896
+      ],
+      "t14": [
+       29.65685,
+       2.34315
+      ]
+     },
+     "vertices": [
+      "t14",
+      "t13",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base13": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b13": [
+       27.06147,
+       0.60896
+      ],
+      "b14": [
+       29.65685,
+       2.34315
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b13",
+      "b14"
+     ],
+     "texture": 0
+    },
+    "lado14": {
+     "uv": {
+      "b14": [
+       14,
+       16
+      ],
+      "b15": [
+       15,
+       16
+      ],
+      "t15": [
+       15,
+       0
+      ],
+      "t14": [
+       14,
+       0
+      ]
+     },
+     "vertices": [
+      "t14",
+      "t15",
+      "b15",
+      "b14"
+     ],
+     "texture": 0
+    },
+    "topo14": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t14": [
+       29.65685,
+       2.34315
+      ],
+      "t15": [
+       31.39104,
+       4.93853
+      ]
+     },
+     "vertices": [
+      "t15",
+      "t14",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base14": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b14": [
+       29.65685,
+       2.34315
+      ],
+      "b15": [
+       31.39104,
+       4.93853
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b14",
+      "b15"
+     ],
+     "texture": 0
+    },
+    "lado15": {
+     "uv": {
+      "b15": [
+       15,
+       16
+      ],
+      "b0": [
+       16,
+       16
+      ],
+      "t0": [
+       16,
+       0
+      ],
+      "t15": [
+       15,
+       0
+      ]
+     },
+     "vertices": [
+      "t15",
+      "t0",
+      "b0",
+      "b15"
+     ],
+     "texture": 0
+    },
+    "topo15": {
+     "uv": {
+      "ct": [
+       24,
+       8
+      ],
+      "t15": [
+       31.39104,
+       4.93853
+      ],
+      "t0": [
+       32.0,
+       8.0
+      ]
+     },
+     "vertices": [
+      "t0",
+      "t15",
+      "ct"
+     ],
+     "texture": 0
+    },
+    "base15": {
+     "uv": {
+      "cb": [
+       24,
+       8
+      ],
+      "b15": [
+       31.39104,
+       4.93853
+      ],
+      "b0": [
+       32.0,
+       8.0
+      ]
+     },
+     "vertices": [
+      "cb",
+      "b15",
+      "b0"
+     ],
+     "texture": 0
+    }
+   },
+   "type": "mesh",
+   "uuid": "627b7680-0182-4e02-82c0-e4c2fdb3f0f1"
+  }
+ ],
+ "groups": [],
+ "outliner": [
+  "627b7680-0182-4e02-82c0-e4c2fdb3f0f1"
+ ],
+ "textures": [
+  {
+   "name": "wood",
+   "path": "",
+   "folder": "block",
+   "namespace": "",
+   "id": "0",
+   "width": 32,
+   "height": 16,
+   "uv_width": 32,
+   "uv_height": 16,
+   "particle": false,
+   "render_mode": "default",
+   "render_sides": "auto",
+   "wrap_mode": "limited",
+   "visible": true,
+   "internal": true,
+   "saved": false,
+   "uuid": "113f6e77-1337-48b3-a7b2-f946f46181d5",
+   "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAFCklEQVR4XpWVS28cRRSFv6p+zow9tmM8fsTBTuJ47Mh2XgiEAGUHEmzYwK+DDRskJDaRYMECJFigBEgIdnCM7UDsIR47Jn7NTE93V1ehqiGGLLlSq7t6uu4959xza8Tbr8+a+mQF44UsXBzj0y/usjQ/Tn1ikM+/3uDiVD++72M0jAz2cZSkDFRi9g5OeHW+xs9rf2GM4f76DldnJ9Bao5Ri9dETjIyJPJi/OIaRml8eNHll4WUyleF5HkJIxM3rU2b+5X6iSpXvlzcp+TEfvr3IZ9+sMDc+yNXFCT75cpkr0+Ncrw9z67tNFucmub/W4L3XJln9o8V7by7R0SmxMEgDWuDCAHmW4gcgZIgQgiAIkAi6Wcqtr1fw87wgyQyKE6pRhZnpYXwMMgVjQCqQRYE0GVvNDgiN1gpJQeBL7q3t8O5bCxy1DjiyqYUhSRLiuIzKNdVqlcN2GyMyB0oDkSd5qdyPH0b4NxYmefD4gOlaQJFn1PrKbD1tYYR2Mj0PLXwma2W+/anL7PgQd5YbbO3mXKuPowsIgzIjfRG+H53ucSoYQxGHro1FUbj7H/t7Tp2VtV18+1KpLqVSH/WZUSefMLAwN0Ha7bK6ddyTTUqk6AEyRpBlGRLNj782eOeNGbpph3CgSqfb5aB9AkJQSChy5YqmWjEa9xNFEV2VY7RmqT6Kb1lO1YYICCmKLlNjVe5t7qHyjL5STCvPyQrQKuW4k4CUbOz9ReCF7By2XHLbU5tHGe2AJhScHRohRCA9nxxNc3f3VNEw8DDCsLzWQOZ5zlRtgEeNpkNXaEW3k7hEt1eaLJ6NCLTipaEz3FnbI01TZyYrbSmOX5B7cHDQTYG9IumjVEbS6Tggdo/d69pqpFP5+o1ZpFNgtMyzVm987Hp9+4jrM9OEgSSMKihROPsk7ZQrcxOu+PNYrNs1VPr7aB0d/9t3rcjzniL2sipYgg58UdixIG+1kTaZvewP9gPHMPT5eXMbTcG93/aoBBG1M4Kj4w5hGHJ8nDmTVuMQz+heG+Q/o2dz0fNKGNpZF9g3/w1P94DZcACkHxBHJU46bR42jvng5jRrv++wdGEUTwj226krYotbeS9PDrkEQvfAF1pysn9CgXJJC50jPJ8wLhGVIoJy7IDYsPdcSjcRWhv89cYBtb4hxzwI+rCesMnt2rZkeWufa+dHiOPYFe8xCwkEjA7HNJ8dUqg2JjQo1WtNuVym+Wz/BdYi8AkC2VPb67G3z36eKgqh8DWugC1k2ZZKJa7OjXFv7U8K26ZCO9QWnP0uSTVhyWf18SHvewHCpKcgxzLf5XjO2Ib1Vo+1RgqDJ3webDzFtyzPjZVpq6770K5tdDodltf3qFgJQ8jzntw2we3VrdODxThlBaqb8GivSex5pMqenD0BskwRRQEFhtCTyCB050rXZBQix7dy/rp5zII9gn07OortnS4DtRJhJJm7MEaadbj727PTPt6YHufmouGjW/cZGqxiPT4+MoJwaKynjBs/a8awv98BSZIWpVIFjFUmwjcJ12bPIfM0Ic9PePXyeZYfPnFSeSZDFBV+WN2mPlEiCGNuXBp27K1H/kwKPv5ilcuz55geG3yh1/83/EtT42gJ2/tHbq8131NjODdSptVOePikTRgE/LTRdOpYDxwcHHDpwjC1gTKHJwlf3Wlwd+UxV+bPOmdboCsbDebrMwSm9yf03HT313fds0SxNDvJ32wojIcrwXQbAAAAAElFTkSuQmCC"
+  }
+ ]
+}

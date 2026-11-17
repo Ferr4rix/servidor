@@ -1,0 +1,1 @@
+"""Núcleo de renderização e estado da sala (separado do main.py)."""

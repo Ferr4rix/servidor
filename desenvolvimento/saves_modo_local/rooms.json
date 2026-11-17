@@ -1,0 +1,43 @@
+{
+  "room_a84f2c91": {
+    "seed": 36945,
+    "size_x": 400,
+    "size_y": 20,
+    "size_z": 400,
+    "modifications": {
+      "13,1,22": {
+        "type": "bau de madeira",
+        "orientation": "L"
+      },
+      "13,1,21": {
+        "type": "bau de madeira",
+        "orientation": "O"
+      },
+      "59,1,126": {
+        "type": "bau de madeira",
+        "orientation": "N"
+      },
+      "26,1,197": null,
+      "49,1,267": null,
+      "49,1,266": null,
+      "42,1,275": null,
+      "40,1,279": null,
+      "40,1,282": null,
+      "40,1,281": null,
+      "41,1,281": null,
+      "41,1,280": null,
+      "42,1,280": null,
+      "41,1,279": null,
+      "42,1,279": null,
+      "42,1,278": null,
+      "39,0,281": "terra",
+      "43,2,288": null,
+      "43,3,288": null,
+      "43,1,288": null,
+      "43,4,287": null,
+      "43,4,288": null,
+      "43,5,286": null,
+      "43,5,287": null
+    }
+  }
+}

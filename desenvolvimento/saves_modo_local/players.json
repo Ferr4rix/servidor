@@ -1,0 +1,124 @@
+{
+    "#a84f2c91": {
+        "usuario": "teste",
+        "senha_hash": "pbkdf2_sha256$200000$991fe20fc6951658679421731ba89218$e3413014e12d31a3ec70c69bf317a671304613f3ae3b890bb81ea0c07a28c89f",
+        "nome": "Ferrarix",
+        "link_room_properties": [
+            "room_a84f2c91"
+        ],
+        "spawn_point": {
+            "room_a84f2c91": "40.0, 6.0, 40.0"
+        },
+        "properties_status": {
+            "vida": "10",
+            "nivel": "1",
+            "attack_speed": "5",
+            "velocidade": "10",
+            "range_ataque": "3",
+            "forca": "1",
+            "armadura": "0",
+            "peso": "0",
+            "vida_max": "10"
+        },
+        "propertie_inventory": {
+            "slots": [
+                {
+                    "item": "peitoral 2",
+                    "count": 1
+                },
+                {
+                    "item": "elmo 2",
+                    "count": 1
+                },
+                {
+                    "item": "peitoral 1",
+                    "count": 1
+                },
+                {
+                    "item": "calça 1",
+                    "count": 1
+                },
+                {
+                    "item": "calça 2",
+                    "count": 1
+                },
+                {
+                    "item": "bota 1",
+                    "count": 1
+                },
+                {
+                    "item": "elmo 1",
+                    "count": 1
+                },
+                {
+                    "item": "bota 2",
+                    "count": 1
+                },
+                {
+                    "item": "cola",
+                    "count": 32
+                },
+                {
+                    "item": "pedra dura",
+                    "count": 16
+                },
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "item": "terra",
+                    "count": 60
+                },
+                {
+                    "item": "wood",
+                    "count": 30
+                },
+                {
+                    "item": "leaves",
+                    "count": 17
+                },
+                {
+                    "item": "espada do heroi",
+                    "count": 1
+                },
+                {
+                    "item": "stand",
+                    "count": 10
+                },
+                {
+                    "item": "bau de madeira",
+                    "count": 10
+                },
+                {
+                    "item": "minoculus-grump",
+                    "count": 10
+                },
+                {
+                    "item": "banco de madeira",
+                    "count": 10
+                }
+            ],
+            "selected": 5,
+            "armor": {
+                "head": null,
+                "chest": null,
+                "legs": null,
+                "feet": null
+            }
+        },
+        "last_position": {
+            "room_a84f2c91": "97.76, 2.00, 538.30"
+        }
+    }
+}

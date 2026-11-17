@@ -1,0 +1,978 @@
+{
+  "elmo 1": {
+    "id": 1,
+    "icon": "elmo.png",
+    "model": "assets/models/armaduras/armadura1/cabeca.gltf",
+    "corporeal": "none",
+    "type": "armor",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.45
+    }
+  },
+  "peitoral 1": {
+    "id": 2,
+    "icon": "peitoral.png",
+    "model": "assets/models/armaduras/armadura1/corpo.gltf",
+    "corporeal": "none",
+    "type": "armor",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.45
+    }
+  },
+  "calça 1": {
+    "id": 3,
+    "icon": "calca.png",
+    "model": "assets/models/armaduras/armadura1/pernas.gltf",
+    "corporeal": "none",
+    "type": "armor",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.45
+    }
+  },
+  "bota 1": {
+    "id": 4,
+    "icon": "bota.png",
+    "model": "assets/models/armaduras/armadura1/pes.gltf",
+    "corporeal": "none",
+    "type": "armor",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.45
+    }
+  },
+  "elmo 2": {
+    "id": 5,
+    "icon": "elmo2.png",
+    "model": "assets/models/armaduras/armadura2/cabeca.gltf",
+    "corporeal": "none",
+    "type": "armor",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.45
+    }
+  },
+  "peitoral 2": {
+    "id": 6,
+    "icon": "peitoral2.png",
+    "model": "assets/models/armaduras/armadura2/corpo.gltf",
+    "corporeal": "none",
+    "type": "armor",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.45
+    }
+  },
+  "calça 2": {
+    "id": 7,
+    "icon": "calca2.png",
+    "model": "assets/models/armaduras/armadura2/pernas.gltf",
+    "corporeal": "none",
+    "type": "armor",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.45
+    }
+  },
+  "bota 2": {
+    "id": 8,
+    "icon": "bota2.png",
+    "model": "assets/models/armaduras/armadura2/pes.gltf",
+    "corporeal": "none",
+    "type": "armor",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.45
+    },
+    "voo": true
+  },
+  "terra": {
+    "id": 9,
+    "type": "block",
+    "block": "terra",
+    "icon": "terra.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.6
+    }
+  },
+  "wood": {
+    "id": 10,
+    "type": "block",
+    "block": "wood",
+    "icon": "wood.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.6
+    }
+  },
+  "leaves": {
+    "id": 11,
+    "type": "block",
+    "block": "leaves",
+    "icon": "leaves.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.6
+    }
+  },
+  "bau de madeira": {
+    "id": 12,
+    "type": "block",
+    "block": "bau de madeira",
+    "icon": "bau_madeira.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.675
+    }
+  },
+  "bau grande": {
+    "id": 29,
+    "type": "block",
+    "block": "bau grande",
+    "icon": "bau_grande.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.675
+    }
+  },
+  "minoculus-grump": {
+    "id": 13,
+    "type": "block",
+    "block": "minoculus-grump",
+    "icon": "minoculus_grump.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.675
+    }
+  },
+  "banco de madeira": {
+    "id": 14,
+    "type": "block",
+    "block": "banco de madeira",
+    "icon": "banco_madeira.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.675
+    }
+  },
+  "stand": {
+    "id": 15,
+    "type": "block",
+    "block": "stand",
+    "icon": "stand.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.675
+    }
+  },
+  "pedra dura": {
+    "id": 16,
+    "type": "block",
+    "block": "pedra dura",
+    "icon": "pedra_dura.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.675
+    }
+  },
+  "cola": {
+    "id": 17,
+    "type": "tool",
+    "icon": "cola.png",
+    "model": "assets/models/ferramentas/cola/cola.obj",
+    "corporeal": "none",
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        -0.05,
+        0
+      ],
+      "rotation": [
+        0,
+        90,
+        -90
+      ],
+      "scale": 0.6
+    }
+  },
+  "espada do heroi": {
+    "id": 18,
+    "type": "weapon",
+    "icon": "espada_heroi.png",
+    "model": "assets/models/armas/Sword of the Hero/sword-of-the-forgotten-hero.obj",
+    "corporeal": "none",
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "scale": 2.5
+    }
+  },
+  "pedra solar": {
+    "id": 26,
+    "type": "block",
+    "block": "pedra solar",
+    "icon": "pedra_solar.png",
+    "model": "block",
+    "luz_na_mao": 18,
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.6
+    }
+  },
+  "fragmento solar": {
+    "id": 27,
+    "type": "block",
+    "block": "fragmento solar",
+    "icon": "fragmento_solar.png",
+    "model": "block",
+    "luz_na_mao": 10,
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.6
+    }
+  },
+  "pedra": {
+    "id": 28,
+    "type": "block",
+    "block": "pedra",
+    "icon": "pedra.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.6
+    }
+  },
+  "maca": {
+    "id": 20,
+    "type": "block",
+    "block": "maca",
+    "icon": "maca.png",
+    "model": "block",
+    "consumivel": {
+      "vida": 2
+    },
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.525
+    }
+  },
+  "balde": {
+    "id": 21,
+    "type": "block",
+    "nome": "Balde",
+    "icon": "balde.png",
+    "model": "assets/models/ferramentas/balde/balde.gltf",
+    "corporeal": "none",
+    "max_stack": 16,
+    "balde": {
+      "cheio": "balde_agua",
+      "capacidade": 4,
+      "minimo": 4
+    },
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        -0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scale": 0.55
+    },
+    "block": "balde"
+  },
+  "balde_agua": {
+    "id": 22,
+    "type": "block",
+    "nome": "Balde de água",
+    "icon": "balde_agua.png",
+    "model": "assets/models/ferramentas/balde/balde_agua.gltf",
+    "corporeal": "none",
+    "max_stack": 1,
+    "balde": {
+      "vazio": "balde",
+      "capacidade": 4,
+      "minimo": 4
+    },
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        -0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scale": 0.55
+    },
+    "block": "balde_agua"
+  },
+  "pedra_transmutacao": {
+    "id": 23,
+    "type": "tool",
+    "nome": "Pedra de transmutação",
+    "icon": "pedra_transmutacao.png",
+    "model": "assets/models/ferramentas/pedra_transmutacao/pedra_transmutacao.gltf",
+    "corporeal": "none",
+    "max_stack": 1,
+    "transmutacao": true,
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        -0.05,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.4
+    }
+  },
+  "espada_esqueleto": {
+    "id": 24,
+    "type": "weapon",
+    "nome": "Espada do esqueleto",
+    "icon": "espada_esqueleto.png",
+    "model": "assets/models/armas/esqueleto/espada_esqueleto.gltf",
+    "corporeal": "none",
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "scale": 1.69
+    }
+  },
+  "escudo_esqueleto": {
+    "id": 25,
+    "type": "tool",
+    "nome": "Escudo do esqueleto",
+    "icon": "escudo_esqueleto.png",
+    "model": "assets/models/armas/esqueleto/escudo_esqueleto.gltf",
+    "corporeal": "none",
+    "max_stack": 1,
+    "escudo": {
+      "angulo": 70,
+      "face": "-x",
+      "cima": "z"
+    },
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scale": 0.75
+    }
+  },
+  "adaga_viajante": {
+    "id": 30,
+    "type": "weapon",
+    "nome": "Adaga do viajante",
+    "icon": "adaga_viajante.png",
+    "model": "assets/models/armas/adaga_viajante/adaga_viajante.gltf",
+    "corporeal": "none",
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.6
+    }
+  },
+  "espada_aco": {
+    "id": 31,
+    "type": "weapon",
+    "nome": "Espada de aço",
+    "icon": "espada_aco.png",
+    "model": "assets/models/armas/espada_aco/espada_aco.gltf",
+    "corporeal": "none",
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "roll": 180,
+      "scale": 1.35
+    }
+  },
+  "machadinha_grimhew": {
+    "id": 32,
+    "type": "weapon",
+    "nome": "Machadinha Grimhew",
+    "icon": "machadinha_grimhew.png",
+    "model": "assets/models/armas/machadinha_grimhew/machadinha_grimhew.gltf",
+    "corporeal": "none",
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "roll": 180,
+      "scale": 1.05
+    }
+  },
+  "montante_lua_negra": {
+    "id": 33,
+    "type": "weapon",
+    "nome": "Montante da Lua Negra",
+    "icon": "montante_lua_negra.png",
+    "model": "assets/models/armas/montante_lua_negra/montante_lua_negra.gltf",
+    "corporeal": "none",
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 2.1
+    }
+  },
+  "ceifador_cinzento": {
+    "id": 34,
+    "type": "weapon",
+    "nome": "Ceifador Cinzento",
+    "icon": "ceifador_cinzento.png",
+    "model": "assets/models/armas/ceifador_cinzento/ceifador_cinzento.gltf",
+    "corporeal": "none",
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 2.3
+    }
+  },
+  "lanca_ferro": {
+    "id": 35,
+    "type": "weapon",
+    "nome": "Lança de ferro",
+    "icon": "lanca_ferro.png",
+    "model": "assets/models/armas/lanca_ferro/lanca_ferro.gltf",
+    "corporeal": "none",
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 2.6
+    }
+  },
+  "tridente": {
+    "id": 36,
+    "type": "weapon",
+    "nome": "Tridente",
+    "icon": "tridente.png",
+    "model": "assets/models/armas/tridente/tridente.gltf",
+    "corporeal": "none",
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 2.4
+    }
+  },
+  "escudo_ferro": {
+    "id": 37,
+    "type": "tool",
+    "nome": "Escudo de ferro",
+    "icon": "escudo_ferro.png",
+    "model": "assets/models/armas/escudo_ferro/escudo_ferro.gltf",
+    "corporeal": "none",
+    "max_stack": 1,
+    "escudo": {
+      "angulo": 70,
+      "face": "-x",
+      "cima": "z"
+    },
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.85
+    }
+  },
+  "parafuso de arquimedes": {
+    "id": 38,
+    "type": "block",
+    "block": "parafuso de arquimedes",
+    "icon": "parafuso_arquimedes.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.675
+    }
+  },
+  "manivela": {
+    "id": 39,
+    "type": "block",
+    "block": "manivela",
+    "icon": "manivela.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.675
+    },
+    "max_stack": 16
+  },
+  "eixo": {
+    "id": 40,
+    "type": "block",
+    "block": "eixo",
+    "icon": "eixo.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.675
+    }
+  },
+  "encaixe do parafuso": {
+    "id": 41,
+    "type": "block",
+    "block": "encaixe do parafuso",
+    "icon": "encaixe_parafuso.png",
+    "model": "block",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.675
+    },
+    "max_stack": 16
+  },
+  "isqueiro": {
+    "id": 42,
+    "type": "tool",
+    "nome": "Isqueiro",
+    "icon": "isqueiro.png",
+    "model": "assets/models/ferramentas/isqueiro/isqueiro.gltf",
+    "corporeal": "none",
+    "max_stack": 1,
+    "isqueiro": true,
+    "_isqueiro": "Botão direito num bloco inflamável (combustivel em blocks.json) acende-o (engine/fire.py).",
+    "hand": {
+      "model": null,
+      "grip": "right",
+      "position": [
+        0,
+        -0.05,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.45
+    }
+  },
+  "grama": {
+    "id": 43,
+    "type": "block",
+    "block": "grama",
+    "icon": "grama.png",
+    "model": "block",
+    "_grama": "Bloco de relva. Partido dá terra (drop em blocks.json); faz-se na pedra de transmutação.",
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.6
+    }
+  },
+  "berco solar": {
+    "id": 44,
+    "type": "block",
+    "block": "berco solar",
+    "icon": "mini_sol.png",
+    "model": "block",
+    "luz_na_mao": 12,
+    "hand": {
+      "model": null,
+      "position": [
+        0,
+        0,
+        -0.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 0.6
+    }
+  }
+}

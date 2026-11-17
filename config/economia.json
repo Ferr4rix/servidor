@@ -1,0 +1,19 @@
+{
+  "_leia": "Só no servidor (não vai para os jogadores). Itens e almas que cada conta recebe UMA vez, os status base de todos os jogadores e o modo de testes (F6/F7 almas, F8 balde). A variável MODO_TESTES do .env (0/1) manda mais que \"testes\".",
+
+  "testes": true,
+
+  "itens_iniciais": [
+    ["minoculus-grump", 1], ["stand", 1], ["bau de madeira", 1], ["pedra solar", 4],
+    ["balde_agua", 1], ["pedra_transmutacao", 1], ["isqueiro", 1]
+  ],
+  "_itens_iniciais": "Itens que cada conta recebe UMA vez (marcados em itens_iniciais no jogador). Sem armas nem parafusos: tudo se faz na pedra de transmutação (receitas.json). O balde vem cheio de água.",
+
+  "almas_iniciais": 500000,
+  "_almas_iniciais": "TESTES: almas dadas uma vez por conta (0 = nada).",
+
+  "status_base": {
+    "vida_max": "10", "attack_speed": "2", "velocidade": "11", "range_ataque": "3", "forca": "600", "armadura": "0", "peso": "40"
+  },
+  "_status_base": "Status base de TODOS os jogadores (o jogo não consegue mudá-los). A vida atual é a única coisa que o jogo grava."
+}

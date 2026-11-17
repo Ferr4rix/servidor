@@ -1,0 +1,988 @@
+{
+  "esqueleto viajante": {
+    "nome": "Esqueleto viajante",
+    "model": "mobs/esqueleto_viajante/esqueleto_viajante.gltf",
+    "scale": 0.95,
+    "health": 30,
+    "almas": 25,
+    "walk_speed": 1.8,
+    "run_speed": 4.0,
+    "turn_speed": 420,
+    "detect_range": 14,
+    "lose_range": 20,
+    "run_range": 0,
+    "attack_range": 1.5,
+    "wander_radius": 6,
+    "animations": {
+      "idle": "idle",
+      "walk": "walk",
+      "run": "charge",
+      "block_start": "begin_block",
+      "block": "block",
+      "block_end": "block_stop",
+      "block_break": "block_destroy",
+      "defend_start": "defend_start",
+      "defend": "defend",
+      "death": "death"
+    },
+    "sem_partes": {
+      "espada": {
+        "walk": "walk_2",
+        "run": "walk_2"
+      }
+    },
+    "partes": {
+      "espada": {
+        "bone": "sword",
+        "vida": 25,
+        "item": "espada_esqueleto",
+        "caixa": "espada"
+      },
+      "escudo": {
+        "bone": "buckler",
+        "vida": 20,
+        "item": "escudo_esqueleto",
+        "caixa": "escudo"
+      }
+    },
+    "block": {
+      "parte": "escudo",
+      "hitbox": "escudo",
+      "chance": 0.45,
+      "range": 3,
+      "hold": 2.0,
+      "raised_after": 0.5,
+      "cooldown": 3.0,
+      "broken_damage_mult": 1.5
+    },
+    "ataques": {
+      "corte": {
+        "tipo": "corpo",
+        "clip": "slash",
+        "caixas": [
+          "espada"
+        ],
+        "janela": [
+          0.05,
+          0.32
+        ],
+        "dano": 4,
+        "alcance": [
+          0,
+          2.6
+        ],
+        "cooldown": 0.8,
+        "requer": [
+          "espada"
+        ],
+        "peso": 2,
+        "alcance_ideal": [
+          0,
+          1.8
+        ],
+        "velocidade": 1.35
+      },
+      "estocada": {
+        "tipo": "corpo",
+        "clip": "attack_sword",
+        "caixas": [
+          "espada"
+        ],
+        "janela": [
+          0.38,
+          0.56
+        ],
+        "dano": 5,
+        "alcance": [
+          0,
+          2.8
+        ],
+        "cooldown": 1.1,
+        "requer": [
+          "espada"
+        ],
+        "peso": 1,
+        "avanco": 3.0,
+        "alcance_ideal": [
+          1.6,
+          2.8
+        ],
+        "velocidade": 1.3
+      },
+      "soco": {
+        "tipo": "corpo",
+        "clip": "attack_unarmed",
+        "caixas": [
+          "punho_d",
+          "punho_e"
+        ],
+        "janela": [
+          0.3,
+          0.47
+        ],
+        "dano": 2,
+        "dano_tipo": "soco",
+        "alcance": [
+          0,
+          1.2
+        ],
+        "cooldown": 0.7,
+        "sem": [
+          "espada"
+        ],
+        "velocidade": 1.3
+      }
+    },
+    "hitboxes": {
+      "corpo": {
+        "bone": "root",
+        "exclude": [
+          "sword",
+          "buckler"
+        ]
+      },
+      "espada": {
+        "bone": "sword",
+        "pad": 9
+      },
+      "escudo": {
+        "bone": "buckler",
+        "pad": 0.5
+      },
+      "punho_d": {
+        "bone": "right_arm",
+        "exclude": [
+          "sword"
+        ],
+        "pad": 3
+      },
+      "punho_e": {
+        "bone": "left_arm",
+        "exclude": [
+          "buckler"
+        ],
+        "pad": 3
+      }
+    },
+    "spawn": {
+      "dungeon": {
+        "por_andar": 12,
+        "encher": true,
+        "recarga": 20
+      }
+    }
+  },
+  "anjo": {
+    "nome": "Anjo",
+    "model": "mobs/anjo/anjo.gltf",
+    "scale": 2.0,
+    "health": 45,
+    "almas": 40,
+    "walk_speed": 1.8,
+    "run_speed": 2.6,
+    "turn_speed": 200,
+    "detect_range": 28,
+    "lose_range": 36,
+    "run_range": 18,
+    "wander_radius": 8,
+    "voo": {
+      "sempre": true,
+      "altura": -0.6,
+      "bob": 0.2,
+      "subida": 3
+    },
+    "distancia": [
+      8,
+      16
+    ],
+    "animations": {
+      "idle": "idle",
+      "idle_raro": "spin",
+      "fly_idle": "idle",
+      "fly_forward": "walk",
+      "walk": "walk",
+      "run": "walk",
+      "death": [
+        "death",
+        "death_ascend"
+      ]
+    },
+    "hitboxes": {
+      "corpo": {
+        "bone": "root",
+        "exclude": [
+          "shards",
+          "beam",
+          "rays",
+          "wing_a_l",
+          "wing_a_r",
+          "wing_b_l",
+          "wing_b_r",
+          "wing_c_l",
+          "wing_c_r"
+        ]
+      },
+      "olho": {
+        "bone": "eye_core"
+      }
+    },
+    "projeteis": {
+      "feixe": {
+        "velocidade": 40,
+        "dano": 6,
+        "raio": 0.35,
+        "vida": 1.2,
+        "cor": "#fff6a8",
+        "tamanho": 0.5,
+        "comprimento": 4.0,
+        "dano_blocos": 4.0
+      },
+      "estilhaco": {
+        "velocidade": 18,
+        "dano": 3,
+        "raio": 0.25,
+        "vida": 2.5,
+        "teleguiado": 30,
+        "cor": "#7ff0ff",
+        "tamanho": 0.3,
+        "comprimento": 0.9,
+        "dano_blocos": 3.0
+      },
+      "aureola": {
+        "velocidade": 12,
+        "dano": 3,
+        "raio": 0.35,
+        "vida": 2.5,
+        "cor": "#ffd84a",
+        "tamanho": 0.4,
+        "dano_blocos": 2.5
+      }
+    },
+    "ataques": {
+      "feixe": {
+        "tipo": "projetil",
+        "clip": "attack_beam",
+        "em": 1.0,
+        "projetil": "feixe",
+        "de": "olho",
+        "teleguiado": false,
+        "mirar_ate": 0.95,
+        "alcance": [
+          3,
+          26
+        ],
+        "cooldown": 6,
+        "peso": 2
+      },
+      "estilhacos": {
+        "tipo": "projetil",
+        "clip": "attack_shards",
+        "em": 1.13,
+        "projetil": "estilhaco",
+        "de": "olho",
+        "padrao": {
+          "tipo": "leque",
+          "n": 5,
+          "angulo": 50
+        },
+        "alcance": [
+          2,
+          22
+        ],
+        "cooldown": 5,
+        "peso": 2
+      },
+      "aureola": {
+        "tipo": "projetil",
+        "clip": "attack_halo",
+        "em": 0.43,
+        "projetil": "aureola",
+        "de": "olho",
+        "padrao": {
+          "tipo": "anel",
+          "n": 12
+        },
+        "alcance": [
+          0,
+          8
+        ],
+        "cooldown": 6,
+        "peso": 3
+      },
+      "pulso": {
+        "tipo": "area",
+        "clip": "attack",
+        "em": 0.37,
+        "raio": 3.5,
+        "dano": 4,
+        "fx": "pulso",
+        "alcance": [
+          0,
+          4
+        ],
+        "cooldown": 4,
+        "peso": 2
+      },
+      "bencao": {
+        "tipo": "cura",
+        "clip": "bless",
+        "cura": 0.3,
+        "vida_abaixo": 0.6,
+        "alcance": [
+          0,
+          99
+        ],
+        "mirar": 180,
+        "cooldown": 25,
+        "peso": 5,
+        "virar": false
+      }
+    },
+    "spawn": {
+      "santuario": {
+        "max": 1,
+        "encher": true,
+        "recarga": 120,
+        "espalhar": true
+      }
+    }
+  },
+  "sombra": {
+    "nome": "Sombra",
+    "model": "mobs/sombra/sombra.gltf",
+    "scale": 0.9,
+    "health": 70,
+    "almas": 60,
+    "walk_speed": 1.7,
+    "run_speed": 3.6,
+    "turn_speed": 220,
+    "detect_range": 14,
+    "lose_range": 20,
+    "run_range": 6,
+    "attack_range": 2.0,
+    "wander_radius": 6,
+    "voo": {
+      "alvo_acima": 3,
+      "longe": 5,
+      "altura": 2.5,
+      "bob": 0.2,
+      "subida": 4
+    },
+    "salto": {
+      "altura": 3,
+      "distancia": 5,
+      "cooldown": 3
+    },
+    "atordoar": {
+      "limite": 0.1,
+      "chance": 0.6
+    },
+    "pousar_inicio": 0.3,
+    "animations": {
+      "idle": [
+        "idle_1",
+        "idle_2"
+      ],
+      "walk": [
+        "walk",
+        "walk_2"
+      ],
+      "run": "run",
+      "turn_left": "turn_left",
+      "turn_right": "turn_right",
+      "jump": "jump",
+      "fall_landing": "fall_landing",
+      "hurt": "hurt",
+      "fly_idle": "fly_idle",
+      "fly_forward": "fly_forward"
+    },
+    "hitboxes": {
+      "corpo": {
+        "bone": "postac",
+        "exclude": [
+          "peleryna_1",
+          "strzep_A1",
+          "strzep_B1",
+          "strzep_D1",
+          "aura",
+          "ostrze_cienia",
+          "kula_cienia",
+          "pola_L1_1",
+          "pola_L2_1",
+          "pola_P1_1",
+          "pola_P2_1",
+          "naramiennik_L",
+          "naramiennik_P"
+        ]
+      },
+      "lamina": {
+        "bone": "ostrze_cienia",
+        "pad": 3.0
+      },
+      "orbe": {
+        "bone": "kula_cienia"
+      },
+      "mao_e": {
+        "bone": "dlon_L",
+        "exclude": [
+          "kula_cienia"
+        ],
+        "pad": 1.5
+      }
+    },
+    "projeteis": {
+      "orbe": {
+        "magico": true,
+        "velocidade": 11,
+        "dano": 5,
+        "raio": 0.45,
+        "vida": 4.0,
+        "teleguiado": 70,
+        "cor": "#7b2cff",
+        "tamanho": 0.55
+      }
+    },
+    "ataques": {
+      "golpe": {
+        "tipo": "corpo",
+        "clip": "attack_1",
+        "caixas": [
+          "lamina"
+        ],
+        "janela": [
+          0.28,
+          0.65
+        ],
+        "dano": 5,
+        "alcance": [
+          0,
+          1.6
+        ],
+        "cooldown": 2.0,
+        "peso": 3
+      },
+      "esmagar": {
+        "tipo": "area",
+        "clip": "attack_2",
+        "em": 0.8,
+        "raio": 2.6,
+        "frente": 1.2,
+        "dano": 8,
+        "fx": "onda",
+        "alcance": [
+          0,
+          2.2
+        ],
+        "cooldown": 6,
+        "peso": 1.5,
+        "voando": false
+      },
+      "orbe": {
+        "tipo": "projetil",
+        "clip": "attack_orb",
+        "em": 1.03,
+        "projetil": "orbe",
+        "de": "orbe",
+        "alcance": [
+          4,
+          13
+        ],
+        "cooldown": 4,
+        "peso": 2
+      },
+      "aura": {
+        "tipo": "aura",
+        "clip": "shadow_aura",
+        "em": 0.5,
+        "dura": 10,
+        "reducao": 0.5,
+        "duracao": 2.5,
+        "vida_abaixo": 0.5,
+        "alcance": [
+          0,
+          99
+        ],
+        "mirar": 180,
+        "cooldown": 25,
+        "peso": 6
+      }
+    },
+    "spawn": {
+      "dungeon": {
+        "por_andar": 4,
+        "andares": [
+          1
+        ],
+        "encher": true,
+        "recarga": 40
+      }
+    },
+    "yaw_offset": 180
+  },
+  "bloomlet": {
+    "nome": "Bloomlet",
+    "model": "mobs/bloomlet/bloomlet.gltf",
+    "scale": 1.2,
+    "health": 18,
+    "almas": 3,
+    "walk_speed": 1.1,
+    "run_speed": 2.42,
+    "turn_speed": 260,
+    "detect_range": 10,
+    "lose_range": 16,
+    "run_range": 3,
+    "attack_range": 1.7,
+    "wander_radius": 8,
+    "passivo": {
+      "raiva": 15,
+      "bando": 6
+    },
+    "morte": {
+      "explosao": {
+        "inchar": 0.45,
+        "raio": 4,
+        "dano": 12,
+        "dano_min": 4,
+        "cor": "#b8f0a0"
+      }
+    },
+    "animations": {
+      "idle": "idle",
+      "walk": "walk",
+      "run": "walk",
+      "attack": "attack",
+      "idle_raro": [
+        "bloom",
+        "spin"
+      ],
+      "comendo": "comendo",
+      "bebendo": "bebendo"
+    },
+    "hitboxes": {
+      "corpo": {
+        "bone": "point"
+      },
+      "golpe": {
+        "bone": "body",
+        "pad": 8
+      }
+    },
+    "ataques": {
+      "investida": {
+        "tipo": "corpo",
+        "clip": "attack",
+        "caixas": [
+          "golpe"
+        ],
+        "janela": [
+          0.4,
+          0.7
+        ],
+        "dano": 3,
+        "dano_tipo": "mordida",
+        "alcance": [
+          0,
+          1.8
+        ],
+        "cooldown": 1.6,
+        "avanco": 1.5
+      }
+    },
+    "spawn": {
+      "publica": {
+        "max": 8,
+        "encher": true,
+        "recarga": 40,
+        "espalhar": true
+      }
+    }
+  },
+  "geodo": {
+    "nome": "Geodo",
+    "model": "mobs/geodo/geodo.gltf",
+    "scale": 1.2,
+    "health": 28,
+    "almas": 3,
+    "walk_speed": 0.9,
+    "run_speed": 1.98,
+    "turn_speed": 260,
+    "detect_range": 10,
+    "lose_range": 16,
+    "run_range": 3,
+    "attack_range": 1.7,
+    "wander_radius": 8,
+    "passivo": {
+      "raiva": 15,
+      "bando": 6
+    },
+    "morte": {
+      "explosao": {
+        "inchar": 0.45,
+        "raio": 4,
+        "dano": 12,
+        "dano_min": 4,
+        "cor": "#b4a8e8"
+      }
+    },
+    "animations": {
+      "idle": "idle",
+      "walk": "walk",
+      "run": "walk",
+      "attack": "attack",
+      "idle_raro": [
+        "sparkle"
+      ],
+      "comendo": "comendo",
+      "bebendo": "bebendo"
+    },
+    "hitboxes": {
+      "corpo": {
+        "bone": "point"
+      },
+      "golpe": {
+        "bone": "body",
+        "pad": 8
+      }
+    },
+    "ataques": {
+      "investida": {
+        "tipo": "corpo",
+        "clip": "attack",
+        "caixas": [
+          "golpe"
+        ],
+        "janela": [
+          0.4,
+          0.7
+        ],
+        "dano": 4,
+        "dano_tipo": "mordida",
+        "alcance": [
+          0,
+          1.8
+        ],
+        "cooldown": 1.6,
+        "avanco": 1.5
+      }
+    },
+    "spawn": {
+      "publica": {
+        "max": 8,
+        "encher": true,
+        "recarga": 40,
+        "espalhar": true
+      }
+    }
+  },
+  "melli": {
+    "nome": "Melli",
+    "model": "mobs/melli/melli.gltf",
+    "scale": 1.2,
+    "health": 16,
+    "almas": 3,
+    "walk_speed": 1.2,
+    "run_speed": 2.64,
+    "turn_speed": 260,
+    "detect_range": 10,
+    "lose_range": 16,
+    "run_range": 3,
+    "attack_range": 1.7,
+    "wander_radius": 8,
+    "passivo": {
+      "raiva": 15,
+      "bando": 6
+    },
+    "morte": {
+      "explosao": {
+        "inchar": 0.45,
+        "raio": 4,
+        "dano": 12,
+        "dano_min": 4,
+        "cor": "#f0c860"
+      }
+    },
+    "animations": {
+      "idle": "idle",
+      "walk": "walk",
+      "run": "walk",
+      "attack": "attack",
+      "idle_raro": [
+        "buzz"
+      ],
+      "comendo": "comendo",
+      "bebendo": "bebendo"
+    },
+    "hitboxes": {
+      "corpo": {
+        "bone": "point"
+      },
+      "golpe": {
+        "bone": "body",
+        "pad": 8
+      }
+    },
+    "ataques": {
+      "investida": {
+        "tipo": "corpo",
+        "clip": "attack",
+        "caixas": [
+          "golpe"
+        ],
+        "janela": [
+          0.6,
+          0.9
+        ],
+        "dano": 3,
+        "dano_tipo": "mordida",
+        "alcance": [
+          0,
+          1.8
+        ],
+        "cooldown": 1.6,
+        "avanco": 1.5
+      }
+    },
+    "spawn": {
+      "publica": {
+        "max": 8,
+        "encher": true,
+        "recarga": 40,
+        "espalhar": true
+      }
+    }
+  },
+  "morango": {
+    "nome": "Morango",
+    "model": "mobs/morango/morango.gltf",
+    "scale": 1.2,
+    "health": 18,
+    "almas": 3,
+    "walk_speed": 1.1,
+    "run_speed": 2.42,
+    "turn_speed": 260,
+    "detect_range": 10,
+    "lose_range": 16,
+    "run_range": 3,
+    "attack_range": 1.7,
+    "wander_radius": 8,
+    "passivo": {
+      "raiva": 15,
+      "bando": 6
+    },
+    "morte": {
+      "explosao": {
+        "inchar": 0.45,
+        "raio": 4,
+        "dano": 12,
+        "dano_min": 4,
+        "cor": "#f08cb0"
+      }
+    },
+    "animations": {
+      "idle": "idle",
+      "walk": "walk",
+      "run": "walk",
+      "attack": "attack",
+      "idle_raro": [
+        "happy"
+      ],
+      "comendo": "comendo",
+      "bebendo": "bebendo"
+    },
+    "hitboxes": {
+      "corpo": {
+        "bone": "point"
+      },
+      "golpe": {
+        "bone": "body",
+        "pad": 8
+      }
+    },
+    "ataques": {
+      "investida": {
+        "tipo": "corpo",
+        "clip": "attack",
+        "caixas": [
+          "golpe"
+        ],
+        "janela": [
+          0.45,
+          0.75
+        ],
+        "dano": 3,
+        "dano_tipo": "mordida",
+        "alcance": [
+          0,
+          1.8
+        ],
+        "cooldown": 1.6,
+        "avanco": 1.5
+      }
+    },
+    "spawn": {
+      "publica": {
+        "max": 8,
+        "encher": true,
+        "recarga": 40,
+        "espalhar": true
+      }
+    }
+  },
+  "nimbi": {
+    "nome": "Nimbi",
+    "model": "mobs/nimbi/nimbi.gltf",
+    "scale": 1.2,
+    "health": 20,
+    "almas": 3,
+    "walk_speed": 1.0,
+    "run_speed": 2.2,
+    "turn_speed": 260,
+    "detect_range": 10,
+    "lose_range": 16,
+    "run_range": 3,
+    "attack_range": 1.7,
+    "wander_radius": 8,
+    "passivo": {
+      "raiva": 15,
+      "bando": 6
+    },
+    "morte": {
+      "explosao": {
+        "inchar": 0.45,
+        "raio": 4,
+        "dano": 12,
+        "dano_min": 4,
+        "cor": "#e8f4ff"
+      }
+    },
+    "animations": {
+      "idle": "idle",
+      "walk": "walk",
+      "run": "walk",
+      "attack": "attack",
+      "idle_raro": [
+        "shake",
+        "rain"
+      ],
+      "comendo": "comendo",
+      "bebendo": "bebendo"
+    },
+    "hitboxes": {
+      "corpo": {
+        "bone": "point"
+      },
+      "golpe": {
+        "bone": "body",
+        "pad": 8
+      }
+    },
+    "ataques": {
+      "investida": {
+        "tipo": "corpo",
+        "clip": "attack",
+        "caixas": [
+          "golpe"
+        ],
+        "janela": [
+          0.45,
+          0.8
+        ],
+        "dano": 3,
+        "dano_tipo": "mordida",
+        "alcance": [
+          0,
+          1.8
+        ],
+        "cooldown": 1.6,
+        "avanco": 1.5
+      }
+    },
+    "spawn": {
+      "publica": {
+        "max": 8,
+        "encher": true,
+        "recarga": 40,
+        "espalhar": true
+      }
+    }
+  },
+  "fada": {
+    "nome": "Fada",
+    "model": "mobs/fada/fada.gltf",
+    "scale": 1.6,
+    "health": 6,
+    "almas": 1,
+    "walk_speed": 2.6,
+    "run_speed": 3.4,
+    "turn_speed": 300,
+    "detect_range": 6,
+    "lose_range": 14,
+    "wander_radius": 6,
+    "voo": {
+      "sempre": true,
+      "altura": 3.0,
+      "bob": 0.8,
+      "subida": 3.5,
+      "altura_alvo": 0.6
+    },
+    "luz": 7,
+    "brilha": true,
+    "_fada": "Guardiã do berço solar (fada.ninho): nascem dele (1-3 logo, até 3), voam à volta e atacam corpo a corpo quem chega a 6 blocos do berço (largam a 14). Somem se o berço for apanhado. 6 de vida, luz 7.",
+    "hitboxes": {
+      "corpo": {
+        "bone": "point"
+      },
+      "golpe": {
+        "bone": "body",
+        "pad": 6
+      }
+    },
+    "animations": {
+      "idle": "idle",
+      "walk": "walk",
+      "run": "walk",
+      "fly_idle": "idle",
+      "fly_forward": "walk",
+      "death": "death",
+      "attack": "attack"
+    },
+    "pensar": [
+      0.1,
+      0.6
+    ],
+    "ninho": {
+      "bloco": "berco solar",
+      "inicial": [
+        1,
+        3
+      ],
+      "max": 3,
+      "recarga": 20,
+      "guarda": 6,
+      "largar": 14,
+      "max_sala": 120
+    },
+    "attack_range": 1.3,
+    "ataques": {
+      "investida": {
+        "tipo": "corpo",
+        "clip": "attack",
+        "caixas": [
+          "golpe"
+        ],
+        "janela": [
+          0.25,
+          0.45
+        ],
+        "dano": 2,
+        "dano_tipo": "mordida",
+        "alcance": [
+          0,
+          1.6
+        ],
+        "cooldown": 1.2,
+        "avanco": 1.2
+      }
+    }
+  }
+}

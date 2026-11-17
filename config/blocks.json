@@ -1,0 +1,876 @@
+{
+  "terra": {
+    "texture": "terra.png",
+    "icon": "terra.png",
+    "block_properties": {
+      "format": "default",
+      "peso": 15,
+      "physics": {
+        "tenacidade": 2000,
+        "estabilidade": 3528,
+        "compressao": 11760
+      },
+      "_peso": "kg reais (no mundo e na mochila, iguais). Blocos 4x mais leves que antes (terra 60 -> 15); a resistência a golpes não depende disto (block_physics HIT_MOVE_FACTOR / BREAK_FACTOR)."
+    }
+  },
+  "grama": {
+    "texture": "grama_lado.png",
+    "texture-top": "grama_topo.png",
+    "texture-bottom": "terra.png",
+    "texture-sides": "grama_lado.png",
+    "icon": "grama.png",
+    "block_properties": {
+      "format": "default",
+      "peso": 15,
+      "drop": "terra",
+      "physics": {
+        "tenacidade": 2000,
+        "estabilidade": 3528,
+        "compressao": 11760
+      }
+    }
+  },
+  "wood": {
+    "texture-surfaces": "wood_top_bot.png",
+    "icon": "wood.png",
+    "texture-sides": "wood_sides.png",
+    "block_properties": {
+      "format": "cylindrical",
+      "peso": 12.5,
+      "physics": {
+        "tenacidade": 3000,
+        "estabilidade": 4704,
+        "compressao": 17640
+      },
+      "render": "cylinder",
+      "combustivel": {
+        "segundos": 60,
+        "pega": 0.06,
+        "altura": 3
+      },
+      "_combustivel": "Fogo (engine/fire.py): blocos com 'combustivel' ardem. segundos = quanto tempo até o bloco ser consumido; pega = chance por segundo de pegar fogo de chamas ao lado; altura = chamas até N blocos (máx. 3)."
+    }
+  },
+  "leaves": {
+    "texture": "leaves.png",
+    "icon": "leaves.png",
+    "block_properties": {
+      "format": "rounded",
+      "peso": 1.25,
+      "coletavel": false,
+      "ao_quebrar": {
+        "bloco": "maca",
+        "chance": 0.2
+      },
+      "physics": {
+        "tenacidade": 400,
+        "estabilidade": 588,
+        "compressao": 2352,
+        "on_topple": "vanish"
+      },
+      "render": "rounded",
+      "combustivel": {
+        "segundos": 8,
+        "pega": 0.35,
+        "altura": 1.5
+      }
+    }
+  },
+  "bau de madeira": {
+    "model": "produced_blocks/wooden-chest.gltf",
+    "texture": "woodenchest.png",
+    "icon": "bau_madeira.png",
+    "block_properties": {
+      "format": "produced",
+      "peso": 7.5,
+      "physics": {
+        "tenacidade": 2500,
+        "estabilidade": 3528,
+        "compressao": 14700
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 0.7,
+      "rotation_offset": [
+        0,
+        180,
+        0
+      ],
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "animation": {
+        "mode": "event",
+        "clip": "open",
+        "close_clip": "close"
+      },
+      "events": [
+        {
+          "trigger": "key_press",
+          "key": "right mouse down",
+          "action": "toggle_animation"
+        }
+      ],
+      "container": {
+        "slots": 24,
+        "title": "Baú de madeira"
+      },
+      "combustivel": {
+        "segundos": 40,
+        "pega": 0.05
+      }
+    }
+  },
+  "bau grande": {
+    "model": "produced_blocks/big-chest.gltf",
+    "icon": "bau_grande.png",
+    "block_properties": {
+      "format": "produced",
+      "peso": 30,
+      "physics": {
+        "tenacidade": 8000,
+        "estabilidade": 11760,
+        "compressao": 47040
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 2.0,
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "animation": {
+        "mode": "event",
+        "clip": "open",
+        "close_clip": "close"
+      },
+      "events": [
+        {
+          "trigger": "key_press",
+          "key": "right mouse down",
+          "action": "toggle_animation"
+        }
+      ],
+      "container": {
+        "slots": 32,
+        "title": "Baú grande"
+      },
+      "combustivel": {
+        "segundos": 60,
+        "pega": 0.05
+      }
+    }
+  },
+  "minoculus-grump": {
+    "model": "produced_blocks/minoculus-grump.gltf",
+    "icon": "minoculus_grump.png",
+    "color": "#8a5cc2",
+    "block_properties": {
+      "format": "produced",
+      "peso": 5,
+      "physics": {
+        "tenacidade": 1500,
+        "estabilidade": 2352,
+        "compressao": 8820,
+        "inquebravel": true
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1.5,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "animation": {
+        "mode": "continuous",
+        "clip": "animation"
+      },
+      "portal": {
+        "title": "Portal do Minoculus",
+        "loja": {
+          "pedra_transmutacao": 250
+        },
+        "_loja": "Itens à venda no minoculus: id do item -> preço em almas (o servidor confere e cobra)."
+      }
+    }
+  },
+  "banco de madeira": {
+    "model": "produced_blocks/banco-de-madeira.gltf",
+    "icon": "banco_madeira.png",
+    "color": "#a0703c",
+    "block_properties": {
+      "format": "produced",
+      "peso": 3.75,
+      "physics": {
+        "tenacidade": 1200,
+        "estabilidade": 1764,
+        "compressao": 7056
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "animation": {
+        "mode": "none"
+      },
+      "seat": {
+        "back_offset": 0.25,
+        "y_offset": -0.2
+      },
+      "combustivel": {
+        "segundos": 30,
+        "pega": 0.08
+      }
+    }
+  },
+  "stand": {
+    "model": "produced_blocks/stand.gltf",
+    "icon": "stand.png",
+    "block_properties": {
+      "format": "produced",
+      "peso": 10,
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1,
+      "size": [
+        1,
+        2,
+        1
+      ],
+      "animation": {
+        "mode": "event",
+        "clip": "animation.armor_stand.check_ground"
+      },
+      "health": {
+        "max": 50,
+        "regen_delay": 5,
+        "regen_per_second": 25
+      },
+      "events": [
+        {
+          "trigger": "hit",
+          "action": "damage"
+        },
+        {
+          "trigger": "hit",
+          "action": "toggle_animation",
+          "restart": true
+        }
+      ],
+      "combustivel": {
+        "segundos": 30,
+        "pega": 0.08
+      }
+    }
+  },
+  "pedra solar": {
+    "texture": "pedra_solar.png",
+    "icon": "pedra_solar.png",
+    "block_properties": {
+      "format": "default",
+      "peso": 10,
+      "luz": 30,
+      "physics": {
+        "tenacidade": 2500,
+        "estabilidade": 3528,
+        "compressao": 14700
+      }
+    }
+  },
+  "fragmento solar": {
+    "texture": "fragmento_solar.png",
+    "icon": "fragmento_solar.png",
+    "block_properties": {
+      "format": "default",
+      "peso": 20,
+      "luz": 16,
+      "physics": {
+        "tenacidade": 3000,
+        "estabilidade": 4704,
+        "compressao": 17640
+      },
+      "dano_contato": {
+        "inicio": 1,
+        "maximo": 20,
+        "tempo": 30,
+        "tick": 0.5
+      }
+    }
+  },
+  "pedra": {
+    "texture": "pedra.png",
+    "icon": "pedra.png",
+    "block_properties": {
+      "format": "default",
+      "peso": 6.25,
+      "physics": {
+        "tenacidade": 8000,
+        "estabilidade": 4704,
+        "compressao": 47040
+      },
+      "baixa_interacao": {
+        "despertar": 50,
+        "raio": 3
+      }
+    }
+  },
+  "maca": {
+    "model": "produced_blocks/maca.gltf",
+    "icon": "maca.png",
+    "color": "#c0303a",
+    "solid": false,
+    "block_properties": {
+      "format": "produced",
+      "peso": 0.05,
+      "physics": {
+        "tenacidade": 0.4,
+        "estabilidade": 29,
+        "compressao": 59
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1.3,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "animation": {
+        "mode": "none"
+      }
+    }
+  },
+  "maca_pendurada": {
+    "model": "produced_blocks/maca.gltf",
+    "icon": "maca.png",
+    "color": "#c0303a",
+    "solid": false,
+    "block_properties": {
+      "format": "produced",
+      "peso": 0.05,
+      "pendura": true,
+      "drop": "maca",
+      "ao_cair": "maca",
+      "physics": {
+        "tenacidade": 0.4,
+        "estabilidade": 29,
+        "compressao": 59
+      },
+      "offset": [
+        0,
+        -0.21,
+        0
+      ],
+      "scale": 1.3,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "animation": {
+        "mode": "none"
+      }
+    }
+  },
+  "pedra dura": {
+    "texture": "stone.png",
+    "icon": "pedra_dura.png",
+    "collectable": false,
+    "block_properties": {
+      "fixo": true,
+      "format": "default",
+      "peso": 250,
+      "physics": {
+        "tenacidade": 200000,
+        "estabilidade": 588000,
+        "compressao": 1176000
+      }
+    }
+  },
+  "balde": {
+    "model": "produced_blocks/balde.gltf",
+    "icon": "balde.png",
+    "color": "#b4b8be",
+    "solid": true,
+    "block_properties": {
+      "format": "produced",
+      "physics": {
+        "tenacidade": 600,
+        "estabilidade": 588,
+        "compressao": 3528
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1.2,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "animation": {
+        "mode": "none"
+      },
+      "peso": 0.38,
+      "recipiente": {
+        "capacidade": 4,
+        "cheio": "balde_agua"
+      },
+      "_recipiente": "Balde vazio posto no mundo: a água que cai em cima dele enche-o (capacidade em níveis; cheio vira 'cheio')."
+    }
+  },
+  "balde_agua": {
+    "model": "produced_blocks/balde_agua.gltf",
+    "icon": "balde_agua.png",
+    "color": "#3c6cd0",
+    "solid": true,
+    "block_properties": {
+      "format": "produced",
+      "physics": {
+        "tenacidade": 600,
+        "estabilidade": 1176,
+        "compressao": 3528
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1.2,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "animation": {
+        "mode": "none"
+      },
+      "peso": 2.38
+    }
+  },
+  "parafuso de arquimedes": {
+    "model": "produced_blocks/parafuso_arquimedes.gltf",
+    "icon": "parafuso_arquimedes.png",
+    "color": "#9a6b3f",
+    "block_properties": {
+      "format": "produced",
+      "peso": 6.25,
+      "physics": {
+        "tenacidade": 1800,
+        "estabilidade": 2352,
+        "compressao": 8820
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "fit": false,
+      "rotation_offset": [
+        0,
+        180,
+        0
+      ],
+      "animation": {
+        "mode": "event",
+        "clip": "girar"
+      },
+      "parafuso": {
+        "papel": "parafuso",
+        "agua_por_bolsa": 1,
+        "carga_max": 250
+      },
+      "_parafuso": "Parafuso de Arquimedes (engine/screw.py): em escada (cada um 1 para trás e 1 para cima do anterior; a frente = ponta de baixo, voltada para quem pôs). 2 bolsas de agua_por_bolsa níveis por bloco; a cada volta a água sobe uma bolsa. Gira pelo encaixe no degrau a seguir ao último. Parafusos presos uns aos outros não caem: o peso da cadeia (parafusos + encaixe) vai todo para o de baixo, que precisa de um bloco por baixo; se passar de carga_max, cai tudo.",
+      "permeavel": true,
+      "_permeavel": "A água entra no bloco (não é empurrada) e o parafuso leva-a nas bolsas.",
+      "combustivel": {
+        "segundos": 40,
+        "pega": 0.05
+      }
+    }
+  },
+  "encaixe do parafuso": {
+    "model": "produced_blocks/encaixe_parafuso.gltf",
+    "icon": "encaixe_parafuso.png",
+    "color": "#7a5230",
+    "block_properties": {
+      "format": "produced",
+      "peso": 7.5,
+      "physics": {
+        "tenacidade": 2500,
+        "estabilidade": 3528,
+        "compressao": 11760
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "fit": false,
+      "rotation_offset": [
+        0,
+        180,
+        0
+      ],
+      "animation": {
+        "mode": "event",
+        "clip": "girar"
+      },
+      "parafuso": {
+        "papel": "encaixe"
+      },
+      "torque": {
+        "tipo": "encaixe",
+        "impacto": 2.0,
+        "impacto_por_parafuso": 1.0,
+        "relacao": 2.0
+      },
+      "_torque": "Caixa de engrenagens no topo da cadeia de parafusos: liga-se a eixos/manivelas pelos lados e por cima. Gasta impacto + impacto_por_parafuso x parafusos (SU por RPM). relacao: voltas do parafuso por volta do eixo. A água sai pela bica, na célula atrás do encaixe.",
+      "combustivel": {
+        "segundos": 40,
+        "pega": 0.05
+      }
+    }
+  },
+  "eixo": {
+    "model": "produced_blocks/eixo.gltf",
+    "icon": "eixo.png",
+    "color": "#8a623a",
+    "block_properties": {
+      "format": "produced",
+      "peso": 1,
+      "physics": {
+        "tenacidade": 1200,
+        "estabilidade": 1764,
+        "compressao": 7056
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "fit": false,
+      "rotation_offset": [
+        0,
+        180,
+        0
+      ],
+      "animation": {
+        "mode": "event",
+        "clip": "girar"
+      },
+      "torque": {
+        "tipo": "eixo",
+        "eixo": "y"
+      },
+      "variantes": {
+        "cima": "eixo",
+        "baixo": "eixo",
+        "lado": "eixo deitado"
+      },
+      "_torque": "Barra de transmissão: passa a rotação de ponta a ponta. Posta numa face de lado fica deitada (eixo deitado).",
+      "combustivel": {
+        "segundos": 15,
+        "pega": 0.1,
+        "altura": 1.5
+      }
+    }
+  },
+  "eixo deitado": {
+    "model": "produced_blocks/eixo_deitado.gltf",
+    "icon": "eixo.png",
+    "color": "#8a623a",
+    "block_properties": {
+      "format": "produced",
+      "peso": 1,
+      "physics": {
+        "tenacidade": 1200,
+        "estabilidade": 1764,
+        "compressao": 7056
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "fit": false,
+      "rotation_offset": [
+        0,
+        180,
+        0
+      ],
+      "animation": {
+        "mode": "event",
+        "clip": "girar"
+      },
+      "drop": "eixo",
+      "torque": {
+        "tipo": "eixo",
+        "eixo": "frente"
+      },
+      "combustivel": {
+        "segundos": 15,
+        "pega": 0.1,
+        "altura": 1.5
+      }
+    }
+  },
+  "manivela": {
+    "model": "produced_blocks/manivela.gltf",
+    "icon": "manivela.png",
+    "color": "#5a3a20",
+    "block_properties": {
+      "format": "produced",
+      "peso": 2,
+      "physics": {
+        "tenacidade": 1200,
+        "estabilidade": 1764,
+        "compressao": 7056
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "fit": false,
+      "rotation_offset": [
+        0,
+        180,
+        0
+      ],
+      "animation": {
+        "mode": "event",
+        "clip": "girar"
+      },
+      "torque": {
+        "tipo": "manivela",
+        "base": "baixo",
+        "rpm": 32,
+        "capacidade": 256
+      },
+      "variantes": {
+        "cima": "manivela",
+        "lado": "manivela de lado"
+      },
+      "_torque": "Fonte de torque manual: segure o botão direito para girar (Shift = ao contrário). rpm e capacidade (força, SU) que dá enquanto gira.",
+      "combustivel": {
+        "segundos": 15,
+        "pega": 0.1,
+        "altura": 1.5
+      }
+    }
+  },
+  "manivela de lado": {
+    "model": "produced_blocks/manivela_lado.gltf",
+    "icon": "manivela.png",
+    "color": "#5a3a20",
+    "block_properties": {
+      "format": "produced",
+      "peso": 2,
+      "physics": {
+        "tenacidade": 1200,
+        "estabilidade": 1764,
+        "compressao": 7056
+      },
+      "offset": [
+        0,
+        -0.5,
+        0
+      ],
+      "scale": 1,
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "fit": false,
+      "rotation_offset": [
+        0,
+        180,
+        0
+      ],
+      "animation": {
+        "mode": "event",
+        "clip": "girar"
+      },
+      "drop": "manivela",
+      "torque": {
+        "tipo": "manivela",
+        "base": "tras",
+        "rpm": 32,
+        "capacidade": 256
+      },
+      "combustivel": {
+        "segundos": 15,
+        "pega": 0.1,
+        "altura": 1.5
+      }
+    }
+  },
+  "capim": {
+    "model": "produced_blocks/capim.gltf",
+    "icon": "capim.png",
+    "color": "#6aaa3c",
+    "solid": false,
+    "collectable": false,
+    "block_properties": {
+      "format": "produced",
+      "peso": 0.1,
+      "cresce_em": "grama",
+      "_capim": "Capim: forma do capim de savana (fontes/savannah-grass.bbmodel) com as cores da grama (tools/gerar_capim.py). Nasce sozinho em cima da grama (engine/tufts.py) e os bichos pacíficos comem-no.",
+      "on_topple": "vanish",
+      "structural": false,
+      "physics": {
+        "tenacidade": 50,
+        "estabilidade": 10,
+        "compressao": 20
+      },
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "animation": {
+        "mode": "none"
+      },
+      "combustivel": {
+        "segundos": 6,
+        "pega": 0.5,
+        "altura": 1.2
+      }
+    }
+  },
+  "flor lunar": {
+    "model": "produced_blocks/flor_lunar.gltf",
+    "icon": "flor_lunar.png",
+    "color": "#bfe8f8",
+    "solid": false,
+    "collectable": false,
+    "block_properties": {
+      "format": "produced",
+      "peso": 0.1,
+      "on_topple": "vanish",
+      "structural": false,
+      "physics": {
+        "tenacidade": 50,
+        "estabilidade": 10,
+        "compressao": 20
+      },
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "animation": {
+        "mode": "none"
+      },
+      "luz": 10,
+      "cresce_em": "grama",
+      "_flor": "Flor lunar: luz fraca de noite (luz 10) e desenhada sempre clara (\"brilha\"). Nasce sozinha na grama da sala pública (engine/tufts.py glow_flowers), ~1 por 220 blocos de chão.",
+      "brilha": true
+    }
+  },
+  "pedra branca": {
+    "texture": "pedra_branca.png",
+    "icon": "pedra_branca.png",
+    "collectable": false,
+    "block_properties": {
+      "fixo": true,
+      "format": "default",
+      "peso": 250,
+      "_pedra_branca": "Chão do Santuário (sala do anjo): igual à pedra dura, mas branco.",
+      "physics": {
+        "tenacidade": 200000,
+        "estabilidade": 588000,
+        "compressao": 1176000
+      }
+    }
+  },
+  "berco solar": {
+    "model": "produced_blocks/mini_sol.gltf",
+    "icon": "mini_sol.png",
+    "color": "#ffd860",
+    "solid": false,
+    "collectable": true,
+    "block_properties": {
+      "format": "produced",
+      "peso": 180,
+      "structural": false,
+      "physics": {
+        "tenacidade": 60000,
+        "estabilidade": 588000,
+        "compressao": 1176000
+      },
+      "size": [
+        1,
+        1,
+        1
+      ],
+      "animation": {
+        "mode": "none"
+      },
+      "luz": 14,
+      "cresce_em": "grama",
+      "brilha": true,
+      "_berco": "Berço Solar (modelo tools/gerar_mini_sol.py / fontes/mini_sol.bbmodel): sol pequenino que flutua e ilumina (luz 14). Muito duro e pesado (180 kg); pode ser apanhado. Onde quer que esteja (qualquer sala), solta 1-3 fadas e vai soltando mais até ter 3 (mobs.json fada.ninho); se for apanhado, as fadas dele somem. Quem chega perto é atacado pelas fadas."
+    }
+  }
+}

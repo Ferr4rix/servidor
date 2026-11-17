@@ -1,0 +1,29 @@
+{
+  "armaduras": {
+    "elmo 1": {"resistencia": 5, "peso": 2.5, "durabilidade": 60},
+    "peitoral 1": {"resistencia": 13, "peso": 6.0, "durabilidade": 120},
+    "calça 1": {"resistencia": 6, "peso": 3.5, "durabilidade": 80},
+    "bota 1": {"resistencia": 3, "peso": 1.5, "durabilidade": 50},
+    "elmo 2": {"resistencia": 8, "peso": 3.5, "durabilidade": 100},
+    "peitoral 2": {"resistencia": 19, "peso": 8.5, "durabilidade": 200},
+    "calça 2": {"resistencia": 9, "peso": 5.0, "durabilidade": 130},
+    "bota 2": {"resistencia": 4, "peso": 2.0, "durabilidade": 80}
+  },
+  "armas": {
+    "espada do heroi": {"fator": 1.8, "range_add": 1, "estilo": "1h", "velocidade": 1.0, "durabilidade": 1500},
+    "espada_esqueleto": {"fator": 1.15, "range_add": 1, "estilo": "1h", "velocidade": 1.15, "durabilidade": 600},
+    "adaga_viajante": {"fator": 0.9, "range_add": 0.3, "estilo": "1h", "velocidade": 1.3, "durabilidade": 400, "peso": 0.5},
+    "espada_aco": {"fator": 1.4, "range_add": 0.8, "estilo": "1h", "velocidade": 1.0, "durabilidade": 800, "peso": 1.5},
+    "machadinha_grimhew": {"fator": 1.6, "range_add": 0.5, "estilo": "1h", "velocidade": 0.9, "durabilidade": 700, "peso": 2.0},
+    "montante_lua_negra": {"fator": 2.6, "range_add": 1.2, "estilo": "2h", "velocidade": 1.0, "durabilidade": 1200, "peso": 4.0},
+    "ceifador_cinzento": {"fator": 3.0, "range_add": 1.2, "estilo": "2h", "velocidade": 0.9, "durabilidade": 1400, "peso": 6.0},
+    "lanca_ferro": {"fator": 1.5, "range_add": 1.8, "estilo": "polearm", "velocidade": 1.0, "durabilidade": 700, "peso": 2.5},
+    "tridente": {"fator": 1.8, "range_add": 1.6, "estilo": "polearm", "velocidade": 0.95, "durabilidade": 900, "peso": 3.0}
+  },
+  "outros": {
+    "escudo_esqueleto": {"peso": 4.0, "durabilidade": 250, "fator": 0.8},
+    "pedra_transmutacao": {"durabilidade": 300},
+    "escudo_ferro": {"peso": 6.0, "durabilidade": 450, "fator": 0.9},
+    "isqueiro": {"peso": 0.2, "durabilidade": 30}
+  }
+}
